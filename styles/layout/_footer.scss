@@ -1,0 +1,25 @@
+footer{
+    padding: 150px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    img{
+        width: 250px;
+    }
+    .nav_footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        a:nth-of-type(1){
+            color: #000;
+            font-weight: bold;
+        }
+        a{
+            color: $maincolor;
+            margin-bottom: 20px;
+        }
+
+    }
+    
+}
