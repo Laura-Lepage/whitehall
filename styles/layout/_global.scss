@@ -7,7 +7,7 @@ a{
     text-transform: uppercase;
 }
 .wrapper{
-    max-width: 1740px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .center{
@@ -126,7 +126,6 @@ a{
 }
 .started{
     span:nth-of-type(1){
-        
         &::after{
             content:'|';
             margin-left: 10px;
@@ -160,21 +159,96 @@ a{
     }
     h3{
         font-size: 28px;
+        min-height: 120px;
     }
     p{
         line-height: 1.5;
     }
 }
-.last_button{
-    grid-column: 1/-1;
-    justify-items: center;
+.last_button_container{
+    width: 100%;
+    text-align: center;
     margin: 70px 0;
-    color: #fff;
-    border: 1px solid $maincolor;
-    background-color: $maincolor;
-    padding: 20px 75px;
-    display: inline;
-   
+    .last_button{
+        text-align: center;
+        color: #fff;
+        border: 1px solid $maincolor;
+        background-color: $maincolor;
+        padding: 20px 75px;
+        display: inline;
+       
+    }
+
 }
+.join_span{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.new_release{
+    border: 1px solid beige;
+    display: inline;
+    background-color: beige;
+    padding: 5px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.single_bottles_main{
+    margin-top: 350px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    .w300{
+        width: 320px;
+        &:hover{
+            background-image: url(../images/pinot191_628x628.png);
+        }
+    }
+}
+.single_bottles_box{
+    position: relative;
+    .fa-heart{
+        color:rgb(54, 4, 4);
+        background-color: rgb(231, 214, 214);
+        padding: 10px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        
+    }
+}
+.join_content{
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+    h3{
+        color: #fff;
+    }
+    a{
+        text-decoration: none;
+        border: 1px solid grey;
+    } 
+}
+.sb_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 14px;
+    a{
+        text-transform: none;
+        margin-bottom: 5px;
+        color: #000;
+    };
+    div{
+        justify-self: end;
+    }
+    small{
+        color: grey;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+
 
 

@@ -1,5 +1,5 @@
 footer{
-    padding: 150px 0;
+    padding: 100px 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
@@ -19,7 +19,11 @@ footer{
             color: $maincolor;
             margin-bottom: 20px;
         }
-
-    }
-    
+    }   
+}
+.small{
+    background-color: $maincolor;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
 }

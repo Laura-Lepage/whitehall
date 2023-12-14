@@ -31,14 +31,23 @@
     }
     .icons{
         justify-self: end;
+        position: relative;
         a{
             color: #000; 
             font-size: 22px;            
         }
         a:nth-of-type(2){
             margin: 0 10px;
+        }
+        sup{
+            background-color: $maincolor;
+            color: #fff;
+            padding: 10px 5px;
+            border-radius: 50%;
+            position: absolute;
+            translate: -10px; 
         } 
-    }   
+    }  
 }
 .online_shop{
     background-color: #fff;
@@ -53,8 +62,6 @@
             color: #000;
             font-weight: bold;
         }
-
     }
-
 }
     
