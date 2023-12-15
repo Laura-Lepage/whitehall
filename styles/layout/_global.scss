@@ -180,6 +180,35 @@ a{
     }
 
 }
+
+// Single_bottles page
+.over_thelast{
+    margin-top: 300px;
+    background-color: rgb(245, 241, 241);
+    text-align: center;
+    position: relative;
+    &::after{
+        content:'';
+        background-image: url(../images/10281361_2_92x.webp);
+        width: 92px;
+        height: 93px;
+        position: absolute;
+        top: 55px;
+        left: 980px;
+        
+
+    }
+    .over_thelast_content{
+        @include width_center (1000px);
+        padding: 70px 0;
+        position: relative;
+        z-index: 1;
+        p{
+            line-height: 1.5;
+        }
+    }
+}
+
 .join_span{
     grid-column: span 2;
     grid-row: span 2;
@@ -195,7 +224,7 @@ a{
 }
 
 .single_bottles_main{
-    margin-top: 350px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
@@ -208,6 +237,9 @@ a{
 }
 .single_bottles_box{
     position: relative;
+    &:hover{
+
+    }
     .fa-heart{
         color:rgb(54, 4, 4);
         background-color: rgb(231, 214, 214);
@@ -217,6 +249,9 @@ a{
         top: 0;
         right: 10px;
         
+    }
+    .quick_hover{
+        display: none;
     }
 }
 .join_content{
@@ -247,6 +282,44 @@ a{
         color: grey;
         font-weight: bold;
         font-style: italic;
+    }
+}
+.exploring{
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+    &::before{
+        content:'';
+        background-image: url(../images/10281361_2_92x.webp);
+        width: 92px;
+        height: 93px;
+        position: absolute;
+        top: 20px;
+        right: 5px;
+    }
+    &>img{
+        width: 60%;
+    }
+    .exploring_content{
+        width: 40%;
+        padding: 20px 60px;
+        background-color: $maincolor;
+        text-align: center;
+        color:#fff;
+        p{
+            line-height: 1.5;
+        }
+        .exploring_a{
+            display: flex;
+            flex-direction: column;
+            a{
+                border:1px solid #fff;
+                margin-top: 20px;
+                color: inherit;
+                padding: 15px;
+            }
+        
+        }
     }
 }
 
